@@ -49,3 +49,18 @@ for i in range(0,500,40):
    turtle.left(100+i)
 ```
 
+--- 
+
+For your first homework, please create a list of turtle locations, something like: 
+```python 
+my_location = (100, 200, 300, 400)
+```
+
+Use for loop to move the turtle forward according the location in the ```my_location``` list
+
+
+This should be similar to printing names but instead of printing names we use location list and move our ```turtle`` forward
+
+*Extra credit:*
+
+Using variable value in the list, try to turn our ```turtle``` as well
