@@ -10,4 +10,4 @@ Materials used:
 
 
 Homework:
-[Homework 1](Homework1.md)
+[Homework 1](homework/Homework1.md)
