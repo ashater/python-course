@@ -64,3 +64,18 @@ This should be similar to printing names but instead of printing names we use lo
 *Extra credit:*
 
 Using variable value in the list, try to turn our ```turtle``` as well
+
+*First Hint*
+
+```python
+for location in my_location:
+    print(location)
+```
+Output:
+```
+100
+200
+300
+400
+```
+
