@@ -2,7 +2,7 @@ In our class on Thursdays we've covered a lot of concepts very quick:
 - We've installed Python using [Anaconda Distribution](https://www.anaconda.com/products/individual)
 - We'v learned how to use IPython console for quick REPL Python interaction
 - We've looked at ```print``` command 
-- We've looked at creating variables 
+- We've looked at creating [variables](PFK_variables.pdf)
 ```python 
 my_name = 'Ari'
 print("My name is" + my_name)
