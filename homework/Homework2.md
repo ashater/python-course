@@ -69,6 +69,14 @@ We have learned a ```%``` modulos/remainder operator:
 
     Sample output: ![rings](olympic_basic.PNG)
 
+- Extra credit: Draw olympic rings using a loop, you have choice of using two loops(top and bottom row of rings) or you can use an ```if``` statement. 
+    ```python
+    if i == 2:
+        move to the bottom code goes here
+    
+    ```
+
+
 ---
 
 ## Please save your work in a file, you can run the saved file using command ```run yourfilename.py```
