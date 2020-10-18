@@ -1,4 +1,4 @@
-# Class 2 Review and Homework 2 
+# Class 3 Review and Homework 3 
 
 ### New material covered on Thursday:
 
