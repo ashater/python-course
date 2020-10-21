@@ -66,7 +66,9 @@
 
     We will learn how to use ```if`` statements and also how to use Python [dictionaries](PFK_dict.pdf):
 
-    Please start with brlow code:
+    [Python for Kids on If statements](PFK_IF_ELSE.pdf)
+
+    Please start with below code:
 
     ```python
 
