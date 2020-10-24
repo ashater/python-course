@@ -16,4 +16,6 @@ Materials used:
 
 - [Class 2 Review and Homework 2](homework/Homework2.md)
 
-- [Class 2 Review and Homework 3](homework/Homework3.md)
+- [Class 3 Review and Homework 3](homework/Homework3.md)
+
+- [Class 4 Review and Homework 3](homework/Homework4.md)
