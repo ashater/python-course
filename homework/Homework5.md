@@ -2,14 +2,14 @@
 
 Class 5 was a review session of Homework 4 and introduction of ```functions```
 
-The key review item was use of ```if`` statements and also dictionaries:
+The key review item was use of ```if``` statements and also dictionaries:
 
 ```python
 user_pass = {'leo': 'bestcod_12', 'phil':'codwarrior32'}
 user_shape = {'leo' : 'triangle', 'phil': 'square'}
 ```
 
-Assume our username is 'leo', kne can ask for a password like below:
+Assume our username is 'leo', we can ask for a password like below:
 
 ```python
 input_user = 'leo'
