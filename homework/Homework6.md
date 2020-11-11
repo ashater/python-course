@@ -60,7 +60,7 @@ The code should look something like below:
 
 
 ```python
-# your shape drawing shapes
+# your shape drawing functions
 def ...
 ```
 ```python
