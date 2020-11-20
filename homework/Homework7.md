@@ -5,10 +5,20 @@ Please ready  [chapter 8](PFK_Classes.pdf) on use of Python classes
 
 
 We mostly went over building blocks for BrickBreaker. 
+We are moving away from running code in ```Ipython``` console, please use Run "filename" in PyCharm
 
 Link to source: [brickbreaker.py](brickbreaker.py)
 
+--- 
+
+Your homework is to make changes in the ```move``` function:
+
+- Please try move the ball down vs. up
+- Please try to identify the ball hitting a paddle (using ```pad_x``` and ```pad_y``` variables and ```if``` statement)
+- Please reverse direction when your ball strikes the paddle, note reversing ball is just changing addition vs. subtraction
+
 ```python
+
 
 from turtle import Turtle, Screen
 
