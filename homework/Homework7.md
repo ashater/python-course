@@ -1,7 +1,7 @@
 
 ### Class 7 was an introduction to building a video game
 
-Please ready  [chapter 8](PFK_Classes.pdf) on use of Python classes
+Please read [chapter 8](PFK_Classes.pdf) on use of Python classes, they are important for our game programming.
 
 
 We mostly went over building blocks for BrickBreaker. 
