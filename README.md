@@ -23,3 +23,5 @@ Materials used:
 - [Class 5 Review and Homework 5](homework/Homework5.md)
 
 - [Class 6 Review and Homework 6](homework/Homework6.md)
+
+- [Class 7 Review and Homework 7](homework/Homework7.md)
