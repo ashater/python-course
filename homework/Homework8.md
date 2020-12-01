@@ -1,5 +1,5 @@
 
-### Class 7 was an introduction to building a video game
+### Class 8 continuation of building a video game
 
 
 We mostly went over building blocks for BrickBreaker and tried to move the player paddle. 
