@@ -43,10 +43,11 @@ def create_brick(x, y):
     b.penup()
     b.sety(y)
     b.setx(x)
+    return b
 
-
+all_bricks = [] # list
 for x in range(0, 300, 100):
-    create_brick(x, 200)
+    all_bricks.append(create_brick(x, 200))
 
 # Player 1 Movement
 def right():
@@ -55,33 +56,48 @@ def right():
     paddle.setx(x) # set the new X position
 
 def left():
+    global  ballspeed
     x = paddle.xcor()# get current position
     x = x - playerspeed # subtract playerspeed to current position
     paddle.setx(x)
 
+def up():
+    y = paddle.ycor() #gets Y location of the paddle
+    y = y + playerspeed # add player speed to y variable
+    paddle.sety(y) # set y coordinate of the paddle
+
 def move():
+    global ballspeed
     x, y = ball.position()
     pad_x, pad_y = paddle.position()
 
     # x = x + ballspeed
     # ball.setx(x)
 
-    #if you hit the position of the paddle reverse speed
+    # here we check if we hit all the breaks
+    if y > all_bricks[0].ycor() - player_height:
+        ballspeed = ballspeed * -1
+
+    # if you hit the position of the paddle reverse speed
+    if y < pad_y + player_height + ballspeed:
+        ballspeed = ballspeed * -1
+
 
 
     # if you are good, please add check for bounds
-    y = y + ballspeed
+    y = y - ballspeed
     ball.sety(y)
+
 
 
     screen.ontimer(move, 20)
 
 
 
-# We assign up and down arrow to move the paddle
+# We assign up and down arre the paddle
 screen.onkey(left, "Left") # binds Left key to the function left()
 screen.onkey(right, "Right") # bind Right key to the function right()
-
+screen.onkey(up, "Up")
 
 screen.listen() # start listeing to keys
 
