@@ -1,14 +1,17 @@
 from turtle import Turtle, Screen
 
 # game settings
-ballspeed = 5
+ballspeed = 3
 playerspeed = 20
 
 cursor_size = 20
 player_height = 80
 player_width = 20
 
-border_height = 0.1
+true_paddle_height = 50
+true_paddle_width = 20
+
+border_height = 600
 border_width = 600
 court_width = 1000
 court_height = 600
@@ -75,7 +78,7 @@ def border():
     # paddle setup
     border = Turtle("square")
     border.turtlesize(border_height / cursor_size, border_width / cursor_size)
-    border.color("black")
+    border.color("white")
     border.penup()
     border.sety(-300)
     border.speed("fastest")
@@ -84,7 +87,7 @@ def border2():
     # paddle setup
     border2 = Turtle("square")
     border2.turtlesize(border_height / cursor_size, border_width / cursor_size)
-    border2.color("black")
+    border2.color("white")
     border2.penup()
     border2.sety(300)
     border2.speed("fastest")
@@ -99,11 +102,17 @@ def move():
     # if you are good, please add check for bounds
     y = y + ballspeed
     ball.sety(y)
+    #ball.write("%i,%i" % (x,y))
 
-    if y > pad_y and y < pad_y + player_height and x < pad_x:
+    #left side
+    if y > pad_y - true_paddle_height and y < pad_y + true_paddle_height and x <= pad_x + true_paddle_width:
         ballspeed = ballspeed * -1
-    if y > pad2_y and y < pad2_y + player_height and x > pad2_x:
+
+    #right side
+    if y > pad2_y - true_paddle_height and y < pad2_y + true_paddle_height and x >= pad2_x - true_paddle_width:
         ballspeed = ballspeed * -1
+
+
     screen.ontimer(move, 20)
 
 
@@ -128,7 +137,7 @@ def score():
 
 # if you hit the position of the paddle reverse speed
 
-
+border()
 
 
 # We assign up and down are the paddle
@@ -138,6 +147,7 @@ screen.onkey(up2, "p")# binds p key to the function up for red()
 screen.onkey(down2, "l")# binds l key to the function down for red()
 
 screen.listen()
+
 
 move()
 score()
