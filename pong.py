@@ -11,10 +11,20 @@ player_width = 20
 true_paddle_height = 50
 true_paddle_width = 20
 
-border_height = 600
-border_width = 600
+border_height = 800
+border_width = 800
 court_width = 1000
 court_height = 600
+
+# border setup
+border = Turtle("square")
+border.turtlesize(border_height / cursor_size, border_width / cursor_size)
+border.color("white")
+border.fillcolor("black")
+border.penup()
+border.sety(00)
+border.speed("fastest")
+
 
 # Ball setup
 ball = Turtle("circle")
@@ -44,6 +54,16 @@ paddle2.color("red")
 paddle2.penup()
 paddle2.setx(300)
 paddle2.speed("fastest")
+
+# score
+text = Turtle("square")
+text.turtlesize(100 / cursor_size, 100 / cursor_size)
+text.penup()
+text.color("red")
+text.fillcolor("black")
+text.sety(400)
+text.write("0 0", font=("Arial", 36, "normal"), align="center")
+
 
 def up():
     y = paddle.ycor()  # get current position
@@ -106,6 +126,11 @@ def move():
 
     #left side
     if y > pad_y - true_paddle_height and y < pad_y + true_paddle_height and x <= pad_x + true_paddle_width:
+        # total true_paddle_height
+        if y > pad_y - true_paddle_height/2 and y < pad_y + true_paddle_height/2:
+            ballspeed = ballspeed * -.5
+#            text.write("1 0", font=("Arial", 36, "normal"), align="center")
+
         ballspeed = ballspeed * -1
 
     #right side
@@ -137,7 +162,6 @@ def score():
 
 # if you hit the position of the paddle reverse speed
 
-border()
 
 
 # We assign up and down are the paddle
